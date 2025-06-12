@@ -7,13 +7,12 @@
     href="{{ get_url(path="rss.xml", trailing_slash=false) | safe }}">{%
     endblock %}
     <link rel="shortcut icon" href="/favicon.ico" />
-    <!--TODO: favicon.icoをstaticディレクトリに設置-->
     <meta name="theme-color" content="rgb(15.29, 15.29, 15.29)" />
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&family=Zen+Old+Mincho&display=swap"
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap"
       rel="stylesheet"
     />
     <!--Google Fonts-->
@@ -22,12 +21,17 @@
     get_url(path="base.css",trailing_slash=false) | safe }}">
     <!--css-->
     <!--og setting-->
-    <meta property="og:title" content="うさパライン制作ブログ" />
+    <meta
+      property="og:title"
+      content="-うさパライン「なついろにっき。」制作ブログ-"
+    />
     <meta name="keyword" content="ノベルゲーム" />
-    <meta property="og:description" content="うさパライン制作ブログです。" />
+    <meta
+      property="og:description"
+      content="うさパライン「なついろにっき。」制作ブログです。"
+    />
     <meta property="og:image:width" content="1500" />
-    <meta property="og:image" content="" />
-    <!--TODO: 画像もらう-->
+    <meta property="og:image" content="/first-view/top.webp" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ config.base_url }}" />
     <!--og setting-->

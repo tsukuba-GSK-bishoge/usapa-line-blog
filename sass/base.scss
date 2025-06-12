@@ -1,4 +1,4 @@
-//* base settings *//
+//* Base Settings *//
 html,
 body {
   padding: 0;
@@ -6,7 +6,8 @@ body {
   background-color: #d8d8d8;
   * {
     color: #000000;
-    font-family: "Zen Kurenaido", sans-serif;
+
+    font-family: "M PLUS 1p", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
@@ -106,10 +107,10 @@ body {
   }
 }
 
-//* First View *//
+//* First View Section *//
 .first-view {
   margin-top: -90.5px;
-  background-image: url("first-view/sample.jpg");
+  background-image: url("first-view/top.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -131,7 +132,7 @@ body {
   }
 }
 
-//* 局旅行紹介 *//
+//* About *//
 .about-section {
   .title {
     font-size: 2em;
@@ -150,7 +151,7 @@ body {
 }
 
 
-//* jsys局旅行 Blog list *//
+//* Blog List Section *//
 .blog-list-section {
   height: 100lvh;
   width: 100%;
@@ -203,7 +204,7 @@ body {
   }
 }
 
-//* jsys局旅行 Post Page *//
+//* Post *//
 .blog-page-section {
   padding: 0;
   margin: 0;
@@ -314,7 +315,7 @@ body {
   }
 }
 
-//* jsys局旅行 Blog list *//
+//* Blog List *//
 .blog-list-page-section {
   height: 100lvh;
   width: 100%;
@@ -367,7 +368,7 @@ body {
   }
 }
 
-//* jsys局旅行 Blog Tag list *//
+//* Blog Tag List *//
 .tag-list-page-section {
   height: 100lvh;
   width: 100%;
