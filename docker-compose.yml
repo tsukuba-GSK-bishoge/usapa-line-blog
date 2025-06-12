@@ -1,7 +1,7 @@
 services:
-  jsys-travel-blog:
-    image: jsys-travel-blog
-    container_name: jsys-travel-blog
+  usapa-line-blog:
+    image: usapa-line-blog
+    container_name: usapa-line-blog
     build:
       context: .
       dockerfile: ./Dockerfile
