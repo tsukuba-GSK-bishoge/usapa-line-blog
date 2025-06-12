@@ -1,8 +1,8 @@
 FROM ghcr.io/getzola/zola:v0.20.0 as builder
 
 LABEL version="0.0.1"
-LABEL descripttion="jsys travel blog"
-LABEL maintainer="sohosai"
+LABEL descripttion="usapa line natsuiro nikki create blog"
+LABEL maintainer="tsukuba-GSK-bishoge"
 
 COPY . /project
 WORKDIR /project

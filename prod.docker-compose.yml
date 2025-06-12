@@ -1,7 +1,7 @@
 services:
-  jsys-travel-blog:
+  usapa-line-blog:
     image: ghcr.io/tsukuba-gsk-bishoge/usapa-line-blog/blog:main
-    container_name: jsys-travel-blog
+    container_name: usapa-line-blo
     build:
       context: .
       dockerfile: ./Dockerfile
