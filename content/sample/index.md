@@ -1,10 +1,14 @@
 +++
-title = "Sample Blog Page"
+title = "「なついろにっき。」制作ブログ 爆誕"
 date = 2025-06-12
 authors = ["Myxogastria0808"]
 [taxonomies]
 tags = ["スクリプト"]
 +++
+
+うさパライン「なついろにっき。」制作ブログをzolaで爆速で作成しました、Myxogastria0808です。
+`Shortcodes`も複数用意したので、表現が豊かな数々のブログがこれから作成されることでしょう。
+利用できる記法を様々載せています。
 
 # h1
 
