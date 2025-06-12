@@ -1,9 +1,9 @@
 +++
 title = "Sample Blog Page"
-date = 2025-03-25
-authors = ["そぽたん", "そぽたん2"]
+date = 2025-06-12
+authors = ["Myxogastria0808"]
 [taxonomies]
-tags = ["jsys24", "局旅行"]
+tags = ["スクリプト"]
 +++
 
 # h1
