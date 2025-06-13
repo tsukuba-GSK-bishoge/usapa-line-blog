@@ -12,6 +12,12 @@
 winget install getzola.zola
 ```
 
+### MacOS ユーザーの場合
+
+```shell
+brew install zola
+```
+
 ### Nix ユーザーの場合 (flake を利用できる場合)
 
 ```shell
@@ -87,7 +93,9 @@ fn main() {
 
 image は、`width=int`,`height=int`,`caption=String`をそれぞれオプションで追加できます。(Blog の sample ページを参照)
 
-> [!NOTE] > `width`や`height`に非常に大きな自然数を入れた場合は、Markdown の結果が表示される DOM の範囲まで大きくなります。
+> [!NOTE]
+>
+> `width`や`height`に非常に大きな自然数を入れた場合は、Markdown の結果が表示される DOM の範囲まで大きくなります。
 >
 > (css のレイアウトを壊そうとしても、壊せないようにしているということです。)
 
