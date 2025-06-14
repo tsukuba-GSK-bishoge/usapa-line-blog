@@ -1,19 +1,26 @@
 {% extends "base.html" %} {% block content %}
 <div class="first-view">
   <div>
-    <h2 class="title">-うさパライン「なついろにっき。」制作ブログ-</h2>
-    <h2 class="hashtag">#なついろにっき。</h2>
+    <h2 class="title">「なついろにっき。」</h2>
+    <h2 class="hashtag">- 制作ブログ -</h2>
   </div>
 </div>
+
+<!--About Section-->
 <section class="about-section">
-  <h1 class="title">-うさパライン「なついろにっき。」制作ブログ-</h1>
-  <h1 class="subtitle">~ なついろにっき。とは？~</h1>
+  <div class="icon"></div>
+  <h1 class="title">
+    <span>ステラと過ごす</span><span>ちょっぴり</span><span>不思議な7日間</span>
+  </h1>
+  <div class="play-image"></div>
   <p class="content">
     「なついろにっき。」は2025年春から筑波大学現代視覚文化研究会美少女ゲーム制作班にて始動したノベルゲーム制作企画です。
     <br />
     ライン長うさパを中心に制作の記録を綴っていきます。
   </p>
 </section>
+
+<!--Blog List Section-->
 <section class="blog-list-section">
   <h1 class="title">ブログ記事一覧</h1>
   <a href="{{ config.base_url }}/tags" class="tag-list">タグ一覧はこちらから</a>
