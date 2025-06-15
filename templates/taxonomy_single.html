@@ -1,13 +1,8 @@
-{% extends "base.html" %} {% block content %}
-<!--header-->
-<header class="header">
-  <a href="{{ config.base_url }}/" class="title"
-    >-「なついろにっき。」制作ブログ-</a
-  >
-</header>
-<!--header-->
-<section class="blog-list-page-section">
-  <h1 class="title">#{{ term.name | safe }}&ensp;が付いた記事一覧</h1>
+{% extends "base.html" %} {% block content %} {% include "header.html" %}
+<section class="blog-list-page">
+  <h1 class="title">
+    <span>#{{ term.name | safe }}</span><span>が付いた記事一覧</span>
+  </h1>
   <ul>
     {%for page in term.pages %}
     <li>

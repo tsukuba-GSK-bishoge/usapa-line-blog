@@ -1,3 +1,4 @@
+@use "header";
 @use "top";
 @use "blog";
 @use "blog-list";
@@ -18,23 +19,6 @@ body {
     font-weight: 400;
     font-style: normal;
   }
-  .header {
-    z-index: 10;
-    padding: 30px 0 30px 0;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 11px 11px 22px #c7c7c7, -11px -11px 22px #f8f8f8;
-    height: 30.5px;
-    .title {
-      padding: 0;
-      margin: 0 0 0 30px;
-      font-size: 1.3em;
-      text-decoration: none;
-      color: #000000;
-    }
-  }
   /* footer */
   footer {
     margin: auto 0 0 0;
@@ -51,6 +35,10 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+    p {
+      margin: 2px 0;
+      padding: 0;
     }
     /* PC */
     @media screen and (max-width: 439px) {

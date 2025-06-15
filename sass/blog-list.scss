@@ -1,17 +1,21 @@
 //* Blog List Page *//
-.blog-list-page-section {
+.blog-list-page {
   height: 100lvh;
   width: 100%;
   .title {
     font-size: 1.8em;
     text-align: center;
     margin: 70px 0 50px 0;
+    padding: 0 20px;
   }
   .tag-list {
     font-size: 1.2em;
     text-align: center;
     margin: 0 0 30px 0;
     display: block;
+  }
+  span {
+    display: inline-block;
   }
   ul {
     list-style: none;

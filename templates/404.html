@@ -1,11 +1,4 @@
-{% extends "base.html" %} {% block content %}
-<!--header-->
-<header class="header">
-  <a href="{{ config.base_url }}/" class="title"
-    >-「なついろにっき。」制作ブログ-</a
-  >
-</header>
-<!--header-->
+{%extends "base.html" %} {% block content %} {% include "header.html" %}
 <section class="error-page-section">
   <div class="container">
     <h1 class="statuscode">404</h1>
