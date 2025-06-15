@@ -2,7 +2,7 @@
 <section class="blog-page-section">
   <div class="blog-content">
     <!--main content-->
-    <div class="blog-container blog-config">
+    <div class="blog-container">
       <h1 class="blog-title">{{ page.title | safe }}</h1>
       <p class="blog-meta">
         {% for tag in page.taxonomies.tags %}{% if loop.last %}
@@ -22,7 +22,7 @@
       <p class="back-link">
         <a href="{{ config.base_url }}/">ブログ記事一覧に戻る</a>
       </p>
-      {{ page.content | safe }}
+      <div class="blog-config">{{ page.content | safe }}</div>
     </div>
     <!--main content-->
     <!--table of contents-->
