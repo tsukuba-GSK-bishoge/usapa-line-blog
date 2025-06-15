@@ -72,9 +72,9 @@ tags = ["ライン長","制作日記"]
 
 
 仕事を割り振る上で、Googleフォームを活用したり、
-{{ image(path="/content/sample/formGoogle.png", width=500, height=200, caption="Googleフォーム") }}
+{{ image(path="/content/sample/formGoogle.PNG", width=500, height=200, caption="Googleフォーム") }}
 エクセルでガントチャートを作ったりなどしました。
-{{ image(path="/content/sample/ganchart.png", width=500, height=200, caption="ガントチャート") }}
+{{ image(path="/content/sample/ganchart.PNG", width=500, height=200, caption="ガントチャート") }}
 
 
 この仕事の振り方は班内でもおそらく初めてで、手探りながらもやってみました。形式的にはかっちりしてますが、これがちゃんと役立つかどうかは企画が終わってみないとわからないので、終わってからの感想も書きたいですね。
