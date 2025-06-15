@@ -19,7 +19,9 @@
         in page.authors %} {% if loop.last %}{{ author | safe }}{% else %}{{
         author | safe }},&ensp;{% endif %}{% endfor %}
       </p>
-      <p><a href="{{ config.base_url }}/">ブログ記事一覧に戻る</a></p>
+      <p class="back-link">
+        <a href="{{ config.base_url }}/">ブログ記事一覧に戻る</a>
+      </p>
       {{ page.content | safe }}
     </div>
     <!--main content-->
