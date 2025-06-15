@@ -252,9 +252,9 @@ zola 0.19.2
 
 ## templates の構造
 
-以下、疑似 html で表現している
+以下、疑似的な html で表現している
 
-### 記事一覧ページ
+### トップページ (記事一覧ページを兼ねている)
 
 ```
 <base.html>
@@ -262,11 +262,30 @@ zola 0.19.2
 </base.html>
 ```
 
+### タグ一覧ページ
+
+```
+<base.html>
+  <header.html></header.html>
+  <taxonomy_list.html></taxonomy_list.html>
+</base.html>
+```
+
+### 特定のタグ一覧ページ
+
+```
+<base.html>
+  <header.html></header.html>
+  <taxonomy_single.html></taxonomy_single.html>
+</base.html>
+```
+
 ### 記事ページ
 
 ```
 <base.html>
-    <blog-template.html></blog-template.html>
+  <header.html></header.html>
+  <blog-template.html></blog-template.html>
 </base.html>
 ```
 
@@ -274,7 +293,8 @@ zola 0.19.2
 
 ```
 <base.html>
-    <404.html></404.html>
+  <header.html></header.html>
+  <404.html></404.html>
 </base.html>
 ```
 
