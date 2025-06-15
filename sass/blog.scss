@@ -1,7 +1,5 @@
 //* Blog Page *//
 .blog-page-section {
-  padding: 0;
-  margin: 0;
   background-color: #eaeaea;
   .blog-content {
     display: flex;
@@ -39,9 +37,6 @@
     @media screen and (max-width: 1010px) {
       .toc-box {
         display: none;
-      }
-      .blog-container {
-        margin: 0;
       }
     }
     /* PC */
@@ -91,13 +86,8 @@
     }
     blockquote {
       background-color: #c5c5c5;
-      margin: 0;
       padding: 5px 10px;
       border-left: #9b9b9b 5px solid;
-      * {
-        margin: 0;
-        padding: 0;
-      }
     }
     pre {
       padding: 15px;
