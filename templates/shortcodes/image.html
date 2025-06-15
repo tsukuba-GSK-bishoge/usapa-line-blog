@@ -6,7 +6,7 @@ width=width, op="fill", format="webp", quality=75) %}
   <img
     src="{{ image.url | safe }}"
     style="max-width: 100%; max-height: 100svh"
-    alt="{{ image.alt | safe }}"
+    alt="{{ caption | safe }}"
   />
   {% endif %}
   <img
@@ -23,7 +23,7 @@ op="fit_width", format="webp", quality=75) %}
   <img
     src="{{ image.url | safe }}"
     style="max-width: 100%; max-height: 100svh"
-    alt="{{ image.alt | safe }}"
+    alt="{{ caption | safe }}"
   />
   {% endif %}
   <img
@@ -40,7 +40,7 @@ format="webp", quality=75) %}
   <img
     src="{{ image.url | safe }}"
     style="max-width: 100%; max-height: 100svh"
-    alt="{{ image.alt | safe }}"
+    alt="{{ caption | safe }}"
   />
   {% endif %}
   <img
@@ -54,7 +54,7 @@ false #} {% set image = resize_image(path=path, width=2000, op="fit_width",
 format="webp", quality=75) %}
 <div class="img-box">
   {# caption #} {% if caption %}
-  <img src="{{ image.url | safe }}" width="100%" alt="{{ image.alt | safe }}" />
+  <img src="{{ image.url | safe }}" width="100%" alt="{{ caption | safe }}" />
   {% endif %}
   <img
     src="{{ image.url | safe }}"
