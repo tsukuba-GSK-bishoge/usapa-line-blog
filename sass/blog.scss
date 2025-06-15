@@ -5,7 +5,7 @@
     display: flex;
     width: 100%;
     max-width: 1160px;
-    margin: 30px auto 0 auto;
+    margin: 120px auto 130px auto;
     .toc-box {
       margin: 0;
       margin: 150px 20px 0 50px;
@@ -53,12 +53,15 @@
       .toc-box {
         display: none;
       }
+      .blog-container {
+        margin: 0;
+      }
     }
     /* PC */
     @media screen and (min-width: 1011px) {
       .blog-container {
         max-width: 760px;
-        margin: 0 0 130px 20px;
+        margin: 0 0 0 20px;
       }
     }
   }
