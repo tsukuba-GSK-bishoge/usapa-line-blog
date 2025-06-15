@@ -14,7 +14,6 @@
       display: inline-block;
       list-style: none;
       margin: 0 auto;
-      padding: 0;
       max-width: 600px;
       width: 100%;
       overflow-x: visible;
@@ -28,13 +27,10 @@
             box-shadow: 11px 11px 22px #c7c7c7, -11px -11px 22px #f8f8f8;
             h2 {
               font-size: 1.6em;
-              margin: 0;
               padding: 20px 0 20px 0;
             }
             p {
               font-size: 0.9em;
-              margin: 0;
-              padding: 0;
               text-align: right;
             }
           }
