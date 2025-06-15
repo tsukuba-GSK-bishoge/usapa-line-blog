@@ -72,13 +72,13 @@
           class="pc-credit sawarabi-gothic-regular"
           href="https://yukiosada.work"
         >
-          © <span id="pc-year"></span> Designed and Created by: Myxogastria0808
+          © <span id="year"></span> Designed and Created by: Myxogastria0808
         </a>
         <a
           class="mobile-credit sawarabi-gothic-regular"
           href="https://yukiosada.work"
         >
-          <p>© <span id="mobile-year"></span> Designed and Created by:</p>
+          <p>© <span id="year"></span> Designed and Created by:</p>
           <p>Myxogastria0808</p>
         </a>
       </div>
@@ -89,8 +89,9 @@
       import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
       mermaid.initialize({ startOnLoad: true, theme: "light" });
       // footerの年を更新
-      window.document.getElementById("year").textContent =
-        new Date().getFullYear();
+      window.document.getElementById("year").textContent = new Date()
+        .getFullYear()
+        .toString();
     </script>
   </body>
 </html>
