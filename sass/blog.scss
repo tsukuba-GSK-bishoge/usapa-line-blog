@@ -7,8 +7,9 @@
     max-width: 1160px;
     margin: 30px auto 0 auto;
     .toc-box {
+      margin: 0;
       margin: 150px 20px 0 50px;
-      padding: 10px 0 10px 0;
+      padding: 20px 10px 10px 10px;
       width: 300px;
       height: 400px;
       box-shadow: 11px 11px 22px #c7c7c7, -11px -11px 22px #f8f8f8;
@@ -17,6 +18,10 @@
       position: sticky;
       top: 20px;
       font-size: 1.15em;
+      ul,
+      ol {
+        padding-left: 1.5em;
+      }
     }
     .blog-container {
       flex: 1;
@@ -93,6 +98,10 @@
       padding: 15px;
       border-radius: 7.5px;
       background-color: #dedede !important;
+    }
+    ul,
+    ol {
+      padding-left: 1.5em;
     }
   }
 }
