@@ -1,7 +1,7 @@
 services:
   usapa-line-blog:
     image: ghcr.io/tsukuba-gsk-bishoge/usapa-line-blog/blog:main
-    container_name: usapa-line-blo
+    container_name: usapa-line-blog
     build:
       context: .
       dockerfile: ./Dockerfile

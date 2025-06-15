@@ -1,7 +1,7 @@
 FROM ghcr.io/getzola/zola:v0.20.0 as builder
 
 LABEL version="0.0.1"
-LABEL descripttion="usapa line natsuiro nikki create blog"
+LABEL descripttion="natsuiro nikki blog"
 LABEL maintainer="tsukuba-GSK-bishoge"
 
 COPY . /project
