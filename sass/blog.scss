@@ -5,7 +5,6 @@
     display: flex;
     width: 100%;
     max-width: 1160px;
-    margin: 120px auto 130px auto;
     .toc-box {
       margin: 0;
       margin: 150px 20px 0 50px;
@@ -48,21 +47,24 @@
         font-weight: 400;
       }
     }
-    /* mobile */
-    @media screen and (max-width: 1010px) {
-      .toc-box {
-        display: none;
-      }
-      .blog-container {
-        margin: 0;
-      }
+  }
+  /* mobile */
+  @media screen and (max-width: 1010px) {
+    .toc-box {
+      display: none;
     }
-    /* PC */
-    @media screen and (min-width: 1011px) {
-      .blog-container {
-        max-width: 760px;
-        margin: 0 0 0 20px;
-      }
+    .blog-content {
+      margin: 120px auto 150px auto;
+    }
+  }
+  /* PC */
+  @media screen and (min-width: 1011px) {
+    .blog-content {
+      margin: 120px auto 130px auto;
+    }
+    .blog-container {
+      max-width: 760px;
+      margin: 0 0 0 20px;
     }
   }
   .blog-config {
