@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <!--meta settings start-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="「なついろにっき。」制作ブログです。" />
+    <meta
+      name="keyword"
+      content="ノベルゲーム なついろにっき。 なついろにっき ブログ"
+    />
     {% block rss %}<link rel="alternate" type="application/rss+xml" title="RSS"
     href="{{ get_url(path="rss.xml", trailing_slash=false) | safe }}">{%
     endblock %}
@@ -11,37 +16,53 @@
       rel="shortcut icon"
       href="https://raw.githubusercontent.com/tsukuba-GSK-bishoge/usapa-line-blog/main/static/favicon.ico"
     />
-    <meta name="theme-color" content="rgb(15.29, 15.29, 15.29)" />
-    <!--Google Fonts-->
+    <meta name="theme-color" content="#dde4ff" />
+    <!--meta settings end-->
+    <!--twitter card settings start-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@tsukuba_bishojo" />
+    <meta name="twitter:creator" content="@yuki_osada0808" />
+    <meta name="twitter:title" content="「なついろにっき。」制作ブログ" />
+    <meta
+      name="twitter:description"
+      content="「なついろにっき。」制作ブログです。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/tsukuba-GSK-bishoge/usapa-line-blog/main/static/play.webp"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="「なついろにっき。」制作ブログ サンプルプレイ画像"
+    />
+    <!--twitter card settings end-->
+    <!--google fonts start-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap"
       rel="stylesheet"
     />
-    <!--Google Fonts-->
-    <!--css-->
-    <link rel="stylesheet" href="{{
-    get_url(path="base.css",trailing_slash=false) | safe }}">
-    <!--css-->
-    <!--og setting-->
-    <meta property="og:title" content="「なついろにっき。」制作ブログ" />
-    <meta
-      name="keyword"
-      content="ノベルゲーム なついろにっき。 なついろにっき ブログ"
-    />
+    <!--google fonts end-->
+    <!--og settings start-->
+    <meta property="og:site_name" content="「なついろにっき。」制作ブログ" />
     <meta
       property="og:description"
       content="「なついろにっき。」制作ブログです。"
     />
-    <meta property="og:image:width" content="1500" />
     <meta
       property="og:image"
       content="https://raw.githubusercontent.com/tsukuba-GSK-bishoge/usapa-line-blog/main/static/play.webp"
     />
+    <meta property="og:image:width" content="900" />
+    <meta property="og:image:height" content="506" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ config.base_url }}" />
-    <!--og setting-->
+    <!--og settings end-->
+    <!--css-->
+    <link rel="stylesheet" href="{{
+    get_url(path="base.css",trailing_slash=false) | safe }}">
+    <!--css-->
     <!--katex-->
     <link
       rel="stylesheet"
@@ -49,8 +70,6 @@
       integrity="sha384-7lU0muIg/i1plk7MgygDUp3/bNRA65orrBub4/OSWHECgwEsY83HaS1x3bljA/XV"
       crossorigin="anonymous"
     />
-    <!--katex-->
-
     <!-- The loading of KaTeX is deferred to speed up page rendering -->
     <script
       defer
@@ -58,7 +77,6 @@
       integrity="sha384-RdymN7NRJ+XoyeRY4185zXaxq9QWOOx3O7beyyrRK4KQZrPlCDQQpCu95FoCGPAE"
       crossorigin="anonymous"
     ></script>
-
     <!-- To automatically render math in text elements, include the auto-render extension: -->
     <script
       defer
