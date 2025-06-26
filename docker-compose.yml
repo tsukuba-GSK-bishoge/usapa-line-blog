@@ -1,7 +1,7 @@
 services:
-  usapa-line-blog:
-    image: usapa-line-blog
-    container_name: usapa-line-blog
+  natsuiro-blog:
+    image: natsuiro-blog
+    container_name: natsuiro-blog
     build:
       context: .
       dockerfile: ./Dockerfile
