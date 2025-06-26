@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <!--meta settings start-->
+    <!-- meta settings start -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="「なついろにっき。」制作ブログです。" />
@@ -17,8 +17,8 @@
       href="https://raw.githubusercontent.com/tsukuba-GSK-bishoge/natsuiro-blog/main/static/favicon.ico"
     />
     <meta name="theme-color" content="#dde4ff" />
-    <!--meta settings end-->
-    <!--twitter card settings start-->
+    <!-- meta settings end -->
+    <!-- Twitter card settings start -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@tsukuba_bishojo" />
     <meta name="twitter:creator" content="@yuki_osada0808" />
@@ -35,16 +35,38 @@
       name="twitter:image:alt"
       content="「なついろにっき。」制作ブログ サンプルプレイ画像"
     />
-    <!--twitter card settings end-->
-    <!--google fonts start-->
+    <!-- Twitter card settings end -->
+    <!-- Google fonts start -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap"
       rel="stylesheet"
     />
-    <!--google fonts end-->
-    <!--og settings start-->
+    <!-- Google fonts end -->
+    <!-- Google search console start -->
+    <meta
+      name="google-site-verification"
+      content="rBxTrzCZcTYQZCeJ_mc9scsN-ZoR5nrCGucjL_tUc_A"
+    />
+    <!-- Google search console end-->
+
+    <!-- Google tag (gtag.js) start -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-43T7NYHEFJ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-43T7NYHEFJ");
+    </script>
+    <!-- Google tag (gtag.js) end -->
+    <!-- og settings start -->
     <meta property="og:site_name" content="「なついろにっき。」制作ブログ" />
     <meta
       property="og:description"
@@ -58,12 +80,12 @@
     <meta property="og:image:height" content="506" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ config.base_url }}" />
-    <!--og settings end-->
-    <!--css-->
+    <!-- OG settings end -->
+    <!-- CSS start -->
     <link rel="stylesheet" href="{{
     get_url(path="base.css",trailing_slash=false) | safe }}">
-    <!--css-->
-    <!--katex-->
+    <!-- CSS end -->
+    <!-- katex start -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.css"
@@ -85,12 +107,14 @@
       crossorigin="anonymous"
       onload="renderMathInElement(document.body);"
     ></script>
-    <!--katex-->
+    <!-- katex end -->
     <title>「なついろにっき。」制作ブログ</title>
   </head>
   <body>
+    <!-- main contents start -->
     {% block content %} {% endblock %}
-    <!--footer-->
+    <!-- main contents end -->
+    <!-- footer start -->
     <footer>
       <div class="credit">
         <a
@@ -108,12 +132,12 @@
         </a>
       </div>
     </footer>
-    <!--footer-->
+    <!-- footer end -->
     <script type="module" defer>
       // mermaid
       import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
       mermaid.initialize({ startOnLoad: true, theme: "light" });
-      // footerの年を更新
+      // update year in footer
       window.document.getElementById("year").textContent = new Date()
         .getFullYear()
         .toString();
